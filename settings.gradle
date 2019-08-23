@@ -1,0 +1,5 @@
+rootProject.name = 'provider-driven-example'
+
+include 'consumer'
+include 'provider'
+
