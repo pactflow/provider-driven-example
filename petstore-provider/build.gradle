@@ -5,6 +5,8 @@ plugins {
   id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
+apply plugin: "au.com.dius.pact"
+
 repositories {
   mavenLocal()
   mavenCentral()
@@ -22,6 +24,7 @@ dependencies {
 
   testCompile 'org.springframework.boot:spring-boot-starter-test'
   testImplementation 'org.junit.jupiter:junit-jupiter:5.5.1'
+  testCompile 'au.com.dius:pact-jvm-provider-oas:4.0.0-beta.7'
 }
 
 compileKotlin {
@@ -47,4 +50,15 @@ test {
   testLogging {
     events("passed", "skipped", "failed")
   }
+}
+
+pact {
+
+  publish {
+    pactBrokerUrl = 'https://rontest.pact.dius.com.au'
+    pactBrokerToken = 'xGi5N4mmsfYMe5L33eNm7g'
+    pactDirectory = file("${project.projectDir}/src/main/resources")
+    include = '.*oas.yaml'
+  }
+
 }
