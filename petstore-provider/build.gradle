@@ -56,7 +56,7 @@ pact {
 
   publish {
     pactBrokerUrl = 'https://rontest.pact.dius.com.au'
-    pactBrokerToken = 'xGi5N4mmsfYMe5L33eNm7g'
+    pactBrokerToken = System.getenv('PACTFLOW_BROKER_TOKEN')
     pactDirectory = file("${project.projectDir}/src/main/resources")
     include = '.*oas.yaml'
   }
