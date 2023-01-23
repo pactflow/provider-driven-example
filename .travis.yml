@@ -1,7 +1,7 @@
 language: java
 jobs:
   include:
-  - stage: publish OAS contract to Pactflow
+  - stage: publish OAS contract to PactFlow
     script: "./scripts/publish.sh"
 env:
   global:
