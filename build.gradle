@@ -3,7 +3,7 @@ buildscript {
     mavenLocal()
   }
   dependencies {
-    classpath 'au.com.dius:pact-jvm-provider-gradle:4.0.0-beta.7'
+    classpath 'au.com.dius:pact-jvm-provider-gradle:4.0.10'
   }
 }
 
