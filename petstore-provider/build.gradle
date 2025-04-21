@@ -23,7 +23,7 @@ dependencies {
   implementation 'io.github.microutils:kotlin-logging:1.7.6'
 
   testCompile 'org.springframework.boot:spring-boot-starter-test'
-  testImplementation 'org.junit.jupiter:junit-jupiter:5.12.0'
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.12.2'
   testCompile 'au.com.dius:pact-jvm-provider-oas:4.0.0-beta.7'
 }
 
