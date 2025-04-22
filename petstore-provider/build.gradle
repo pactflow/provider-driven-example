@@ -20,7 +20,7 @@ dependencies {
   implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.9'
   implementation 'org.springdoc:springdoc-openapi-ui:1.1.25'
   implementation 'com.github.salomonbrys.kotson:kotson:2.5.0'
-  implementation 'io.github.microutils:kotlin-logging:1.7.6'
+  implementation 'io.github.microutils:kotlin-logging:1.12.5'
 
   testCompile 'org.springframework.boot:spring-boot-starter-test'
   testImplementation 'org.junit.jupiter:junit-jupiter:5.12.2'
