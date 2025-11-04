@@ -17,7 +17,7 @@ dependencies {
   implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
   implementation 'org.springframework.boot:spring-boot-starter-web'
   implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.20.0'
-  implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.20.0'
+  implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.20.1'
   implementation 'org.springdoc:springdoc-openapi-ui:1.8.0'
   implementation 'com.github.salomonbrys.kotson:kotson:2.5.0'
   implementation 'io.github.microutils:kotlin-logging:1.12.5'
